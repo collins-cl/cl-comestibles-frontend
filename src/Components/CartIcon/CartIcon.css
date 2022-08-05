@@ -1,0 +1,23 @@
+.cart-icon{
+    color: black;
+    font-size: 18px;
+}
+
+.cartbadge{
+    position: relative;
+}
+
+.cartbadge p{
+    position: absolute;
+    font-size: 10px;
+    top: 2px;
+    margin-left: 2.5em;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}

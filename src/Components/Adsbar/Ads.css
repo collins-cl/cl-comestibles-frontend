@@ -1,0 +1,53 @@
+.ads{
+    width: 100%;
+    height: 30px;
+    background-color: teal;
+    color: white;
+    transition: .3s all;
+}
+
+.adsbar{
+    display: none;
+}
+
+.ads-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3px;
+    width: 100%;
+}
+
+.ads-details{
+    font-size: 13px;
+}
+
+.ads-close{
+    cursor: pointer;
+}
+
+@media screen and (min-width:320px) and (max-width: 540px) {
+    .ads{ 
+        height: 35px;
+    }
+    
+    .ads-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2em;
+        gap: 0;
+        padding-top: 7px;
+        width: 100%;
+    }
+    
+    .ads-details{
+        font-size: .8em;
+    }
+    
+    .ads-close{
+        cursor: pointer;
+    }
+}

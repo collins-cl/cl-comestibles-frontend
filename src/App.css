@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body,html{
+    font-family: "OpenSans";
+    scroll-behavior: smooth;
+}
+
+a{
+    color: black;
+}

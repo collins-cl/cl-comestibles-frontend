@@ -1,0 +1,79 @@
+.ark {
+  height: 100vh;
+  background-color: aquamarine;
+  position: relative;
+  margin-top: 8em;
+  margin-bottom: 5em;
+}
+
+.ark-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9em;
+  padding-top: 10em;
+}
+
+.container-1 {
+  max-width: 450px;
+}
+
+.container-1 .head {
+  font-size: 4em;
+  color: rgb(3, 116, 116);
+  font-weight: 500;
+  font-family: "WaterBrush";
+}
+
+.container-1 .details {
+  margin-top: .6em;
+  font-size: 19px;
+  color: teal;
+}
+
+.container-2 img {
+  width: 400px;
+  height: 300px;
+}
+
+@media screen and (max-width: 425px) {
+  .ark {
+    height: 100vh;
+    background-color: aquamarine;
+    position: relative;
+    margin-top: 8em;
+  }
+
+  .ark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4em;
+    padding-top: 3em;
+  }
+
+  .container-1 {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .container-1 .head {
+    font-size: 30px;
+    color: rgb(3, 116, 116);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .container-1 .details {
+    margin-top: 1.3em;
+    max-width: 400px;
+    font-size: 18px;
+    color: teal;
+  }
+
+  .container-2 img {
+    width: 350px;
+    height:250px;
+  }
+}

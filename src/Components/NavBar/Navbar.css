@@ -1,0 +1,183 @@
+.navwrapper {
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid teal;
+}
+
+.navwrapper.active {
+  position: sticky;
+  top: 0;
+  border-bottom: none;
+}
+
+.first-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.7em;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding-left: 5em;
+  font-size: 25px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  cursor: pointer;
+}
+
+.icons-events {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1em;
+  padding-right: 2em;
+}
+
+.secondnav.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em 0;
+  gap: 5em;
+  position: relative;
+}
+
+.secondnav.active a {
+  font-size: 13px;
+  font-family: "Roboto";
+  font-weight: 500;
+  transition: all 1s ease;
+}
+
+.secondnav.active a:nth-child(1)::after{
+  width: 5.8em;
+  margin-left: -5.4em;
+}
+
+.secondnav.active a:nth-child(2)::after{
+  width: 3em;
+  margin-left: -2.8em;
+}
+
+.secondnav.active a:nth-child(3)::after{
+  width: 7em;
+  margin-left: -7.4em;
+}
+
+.secondnav.active a:nth-child(4)::after{
+  width: 5.5em;
+  margin-left: -5.5em;
+}
+
+.secondnav.active a:nth-child(5)::after{
+  width: 4.8em;
+  margin-left: -5em;
+}
+.secondnav.active a:nth-child(6)::after{
+  width: 3em;
+  margin-left: -3em;
+}
+
+.secondnav.active a::after{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 4em;
+  margin-top: 18px;
+  margin-left: -3.5em;
+  background-color: teal;
+
+}
+
+.secondnav.active a:hover {
+  /* font-weight: bold; */
+  color: teal;
+}
+
+@media screen and (max-width: 540px) {
+  .first-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.7em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 22px;
+  }
+
+  .logo {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-left: 20px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    cursor: pointer;
+  }
+
+  .icons-events {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding-right: 0;
+  }
+
+  .secondnav.active {
+    display: none;
+  }
+
+  .secondnav {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    height: 90vh;
+    margin-top: 1.3em;
+    margin-left: 20px;
+  }
+
+  .secondnav a:hover {
+    color: teal;
+  }
+
+  .secondnav a:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .secondnav a:nth-child(2) {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .secondnav a:nth-child(3) {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .secondnav a:nth-child(4) {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .secondnav a:nth-child(5) {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .secondnav a:nth-child(6) {
+    font-size: 35px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,95 @@
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.562);
+}
+
+.offer-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  height: 380px;
+  margin-top: -15px;
+  width: 250px;
+}
+
+.offer:hover{
+  transition: all .5s;
+  transform: translateY(-30px);
+}
+
+.offername {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.offer-desc {
+  font-size: 13px;
+  max-width: 220px;
+}
+
+.shop-now {
+  margin-top: 10px;
+}
+
+.shop-now a {
+  font-size: 12px;
+  background-color: teal;
+  padding: 8px 30px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 540px) {
+  .offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.562);
+  }
+
+  .offer:hover{
+    transform: none;
+  }
+
+  .offer-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    height: 380px;
+    margin-top: -15px;
+    width: 300px;
+  }
+
+  .offername {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .offer-desc {
+    font-size: 15px;
+    max-width: 220px;
+  }
+
+  .shop-now {
+    margin-top: 10px;
+  }
+
+  .shop-now a {
+    font-size: 14px;
+    background-color: teal;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+}

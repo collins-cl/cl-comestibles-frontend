@@ -1,0 +1,119 @@
+footer {
+  margin-top: 12em !important;
+  height: 350px;
+  color: white;
+  background-color: black;
+}
+
+.footer-container {
+  padding: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.col-3 p {
+  font-size: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.col-2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.heading {
+  font-size: 25px;
+}
+
+.col-2 p {
+  font-size: 15px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.socials a {
+  color: white;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+.socials a:hover {
+  color: teal;
+}
+
+.footer-logo {
+  font-size: 30px;
+  font-family: "WaterBrush";
+  font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+  footer {
+    height: 100vh;
+  }
+
+  .footer-container {
+    padding: 2em;
+  }
+
+  .col-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
+  .col-2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .col-2 p {
+    font-size: 15px;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .socials a {
+    color: white;
+    font-size: 18px;
+    transition: all 0.5s;
+  }
+
+  .socials a:hover {
+    color: teal;
+  }
+
+  .footer-logo {
+    font-size: 30px;
+    font-family: "WaterBrush";
+    font-weight: bold;
+  }
+}

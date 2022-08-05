@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./Fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: local("Roboto-Black"), url("./Fonts/Roboto/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"), url("./Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: "WaterBrush";
+  src: local("WaterBrush"), url("./Fonts/Water_Brush/WaterBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "Oleo";
+  src: local("Oleo"), url("./Fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf");
+}
+  

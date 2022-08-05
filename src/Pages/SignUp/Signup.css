@@ -1,0 +1,110 @@
+.signup-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.signup-section {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.signup-head {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.signup-info {
+  max-width: 350px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.signup-form form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.f-password span {
+  float: right;
+}
+
+.f-password span a {
+  font-size: 12px;
+}
+
+button {
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  border: none;
+}
+
+.create-account-link{
+  font-size: 15px;
+  margin-top: 1em;
+}
+
+.create-account-link a{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 375px) and (max-width: 540px) {
+
+    .signup-container {
+        max-width: 1100px;
+        justify-content: center;
+        align-items: center;
+      }
+
+  .signup-container {
+    max-width: 380px;
+  }
+
+  .signup-section {
+    max-width: 375px;
+    gap: 2em;
+  }
+
+  .signup-head {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .signup-form form {
+    gap: 2.5em;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input,
+  button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+  }
+}

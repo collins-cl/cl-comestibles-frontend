@@ -1,0 +1,17 @@
+.offers {
+  margin-top: 10em;
+}
+
+.offers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 540px) {
+  .offers {
+    margin-top: 7em !important;
+  }
+}

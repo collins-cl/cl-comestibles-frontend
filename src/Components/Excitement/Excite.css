@@ -1,0 +1,100 @@
+.excite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8em;
+}
+
+.excite-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 13em;
+}
+
+.excite-other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.excite-other .body {
+  background-color: rgb(255, 51, 0);
+  padding: 5em 4em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body h2 {
+  font-size: 3em;
+  color: mediumblue;
+}
+
+.body p {
+  margin-top: 2em;
+  color: white;
+}
+
+.excite-other .shopnow a {
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  padding: 1em 3em;
+}
+
+@media screen and (max-width: 540px) {
+  .excite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+  }
+
+  .excite-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 5em;
+  }
+
+  .excite-other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .excite-other .body {
+    background-color: rgb(255, 51, 0);
+    padding: 5em 4em;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body h2 {
+    font-size: 3em;
+    color: mediumblue;
+  }
+
+  .body p {
+    margin-top: 2em;
+    color: white;
+  }
+
+  .excite-other .shopnow a {
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    padding: 1em 3em;
+  }
+}

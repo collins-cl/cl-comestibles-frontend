@@ -5,7 +5,7 @@ import CartIcon from "../CartIcon/CartIcon";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-function NavBar({count}) {
+function NavBar({ count, isLogin, setisLogin }) {
   const location = useLocation();
 
   const [navwrapper, setNavWrapper] = useState(false);
@@ -42,10 +42,18 @@ function NavBar({count}) {
           <div className="logo">
             <a href="/">CL COMESTIBLES</a>
           </div>
+          {location.pathname === "/login" ? null : (
             <div className="icons-events">
-              <ProfileIcon />
-              {location.pathname==="/" ?  (<CartIcon count={count} />) : null}
+              {isLogin ? (
+                <ProfileIcon />
+              ) : (
+                <div className="link-to-login">
+                  <Link to="/login">Log In</Link>
+                </div>
+              )}
+              <CartIcon count={count} />
             </div>
+          )}
         </div>
 
         <div className={open ? "secondnav" : "secondnav active"}>

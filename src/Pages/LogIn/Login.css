@@ -67,6 +67,19 @@ button {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.true{
+  display: block;
+}
+
+.false{
+  display: none;
+}
+
+.alert{
+
+}
+
 @media screen and (min-width: 375px) and (max-width: 540px) {
   .login-container {
     max-width: 380px;
@@ -94,5 +107,9 @@ button {
     width: 100%;
     padding: 15px;
     margin-top: 10px;
+  }
+
+  .alert{
+    
   }
 }

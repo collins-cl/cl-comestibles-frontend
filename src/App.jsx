@@ -1,5 +1,5 @@
 import "./App.css";
-import {useState, useReducer } from "react";
+import { useState, useReducer } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Shop from "./Pages/Shop/Shop";
@@ -52,9 +52,14 @@ function App() {
             element={<Cart count={count} dispatch={dispatch} />}
           />
 
-          <Route path="/login" exact element={<Login setisLogin={setisLogin} />} />
+          <Route
+            path="/login"
+            exact
+            element={<Login setisLogin={setisLogin} />}
+          />
 
           <Route path="/register" exact element={<Signup />} />
+
         </Routes>
       </Router>
     </>

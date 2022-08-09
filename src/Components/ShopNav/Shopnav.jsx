@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import "../ShopNav/Shopnav.css"
+import "../ShopNav/Shopnav.css";
 import ProfileIcon from "../ProfileIcon/ProfileIcon";
 import CartIcon from "../CartIcon/CartIcon";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-function Shopnav({count}) {
+function Shopnav({ count, isLogin }) {
+  const location = useLocation();
   const [navwrapper, setNavWrapper] = useState(false);
 
   const changeBackground = () => {
@@ -40,10 +42,12 @@ function Shopnav({count}) {
           <div className="logo">
             <a href="/">CL COMESTIBLES</a>
           </div>
-          <div className="icons-events">
-            <ProfileIcon />
-            <CartIcon count={count} />
-          </div>
+          {location.pathname === "/login" ? null : (
+            <div className="icons-events">
+              <ProfileIcon />
+              <CartIcon count={count} />
+            </div>
+          )}
         </div>
 
         <div className={open ? "secondshopnav" : "secondshopnav active"}>

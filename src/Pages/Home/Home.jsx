@@ -13,7 +13,7 @@ import Insta from "../../Components/Instagram/Insta";
 import Footer from "../../Components/Footer/Footer";
 import CssBaseline from '@mui/material/CssBaseline'
 
-function Home({count, isLogin, setisLogin}) {
+function Home({count, profile}) {
 
   
   return (
@@ -21,7 +21,7 @@ function Home({count, isLogin, setisLogin}) {
       <CssBaseline/>
       <Ads />
       <div className="navbar-container">
-        <NavBar count={count} isLogin={isLogin} setisLogin={setisLogin} />
+        <NavBar count={count} profile={profile}/>
       </div>
       <Slideshow />
       <Twitter />

@@ -6,7 +6,7 @@ import Navbar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import axios from "axios";
 
-const Login = ({ setisLogin }) => {
+const Login = ({  setProfile }) => {
   const navigate = useNavigate();
 
   const initialState = {
@@ -15,7 +15,6 @@ const Login = ({ setisLogin }) => {
   };
 
   const [state, setState] = useState(initialState);
-  const [success, setSuccess] = useState(false);
   const [loginsuccess, setLoginSuccess] = useState("lol");
   const [removelogin, setRemoveLogin] = useState(false);
   const [message, setMessage] = useState(false);
@@ -40,16 +39,15 @@ const Login = ({ setisLogin }) => {
           setSetMessage(true);
           setMessage(result.data.error);
         } else {
-          setSuccess(true);
-          setisLogin();
           setState(initialState);
           setLoginSuccess(result.data.success);
-          setSetMessage(false)
+          setSetMessage(false);
           setRemoveLogin(true);
           setTimeout(() => {
             navigate("/");
           }, 3000);
-          sessionStorage.setItem("accessToken", result.data.accessToken);
+          setProfile(result.data.user)
+          localStorage.setItem("accessToken", result.data.accessToken);
         }
       })
       .catch((result) => {

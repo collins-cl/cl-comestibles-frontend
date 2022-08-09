@@ -5,7 +5,7 @@ import CartIcon from "../CartIcon/CartIcon";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-function NavBar({ count, isLogin, setisLogin }) {
+function NavBar({ count, profile }) {
   const location = useLocation();
 
   const [navwrapper, setNavWrapper] = useState(false);
@@ -44,13 +44,7 @@ function NavBar({ count, isLogin, setisLogin }) {
           </div>
           {location.pathname === "/login" ? null : (
             <div className="icons-events">
-              {isLogin ? (
-                <ProfileIcon />
-              ) : (
-                <div className="link-to-login">
-                  <Link to="/login">Log In</Link>
-                </div>
-              )}
+              <ProfileIcon profile={profile}/>
               <CartIcon count={count} />
             </div>
           )}

@@ -1,4 +1,81 @@
-.user-icon{
-    color: black;
-    font-size: 18px;
+.user-icon {
+  color: black;
+  font-size: 18px;
+}
+
+.MuiDialog-paper {
+  width: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.3em;
+  padding: 1em;
+}
+
+.profile-name {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.modalopen {
+  width: 20em;
+  z-index: 30;
+  position: absolute;
+  right: 0;
+  margin-right: 3em;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.modalopen > div {
+  padding-bottom: 2.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  gap: 1.7em;
+  color: black;
+}
+
+.modalhead {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.modaldetails,
+.modalemail {
+  font-weight: bold;
+}
+
+.modallogout > a {
+  font-size: 16px;
+  padding: 0.5em 2.5em;
+  color: white;
+  background-color: teal;
+  border-radius: 5px;
+}
+
+.modalopen > .redirect {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+  padding-bottom: 1.5em;
+}
+
+.redirect a{
+    font-weight: bold;
+    font-size: 16px;
+    padding:  .4em 2.5em;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+.modalclose {
+  display: none;
 }

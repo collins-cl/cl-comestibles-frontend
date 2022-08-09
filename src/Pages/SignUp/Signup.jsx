@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Signup.css";
+import { Alert } from "@mui/material";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../../Components/NavBar/NavBar";
@@ -16,6 +17,10 @@ const Signup = () => {
   };
 
   const [state, setState] = useState(initialValues);
+  const [err, setErr] = useState(false);
+  const [showerr, setShowErr] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [showsuccess, setShowSuccess] = useState(false);
 
   const { firstname, surname, email, password } = state;
 
@@ -26,29 +31,29 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!firstname || !surname || !email || !password) {
-      alert("some inputs are missing");
-    } else {
-      const res = axios
-        .post("http://localhost:5000/api/users/register", {
-          firstname,
-          surname,
-          email,
-          password,
-        })
-        .then(() => {
-          setState({
-            firstname: "",
-            surname: "",
-            email: "",
-            password: "",
-          });
-        });
-      setTimeout(() => {
-        navigate("/login");
-      }, 3000);
-      console.log(res);
-    }
+    const response = axios
+      .post("http://localhost:5000/api/users/register", {
+        firstname,
+        surname,
+        email,
+        password,
+      })
+      .then((result) => {
+        if (result.data.error) {
+          setShowSuccess(false);
+          setShowErr(true);
+          setErr(result.data.error);
+        } else {
+          setShowErr(false);
+          setShowSuccess(true);
+          setSuccess(result.data.success);
+          setState(initialValues);
+          setTimeout(() => {
+            navigate("/login");
+          }, 3000);
+          console.log(response);
+        }
+      });
   };
 
   return (
@@ -62,7 +67,7 @@ const Signup = () => {
             anywhere nationwide
           </div>
           <div className="signup-form">
-            <form action="post" onSubmit={handleSubmit} >
+            <form action="post" onSubmit={handleSubmit}>
               <div className="log-text">
                 <label htmlFor="firstname">First Name</label>
                 <input
@@ -107,6 +112,14 @@ const Signup = () => {
                   placeholder="password"
                   required
                 />
+              </div>
+
+              <div className={showerr ? "true" : "false"}>
+                <Alert severity="error">{err}</Alert>
+              </div>
+
+              <div className={showsuccess ? "true" : "false"}>
+                <Alert severity="success">{success}</Alert>
               </div>
 
               <div className="signup-button">

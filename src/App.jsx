@@ -21,11 +21,8 @@ const reducer = (state, action) => {
 
 function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
-  const [isLogin, setIsLogin] = useState(false);
 
-  const setisLogin = () => {
-    setIsLogin(true);
-  };
+  const [profilestate, setProfileState] = useState({});
 
   return (
     <>
@@ -35,31 +32,25 @@ function App() {
           <Route
             path="/"
             exact
-            element={
-              <Home count={count} isLogin={isLogin} setisLogin={setisLogin} />
-            }
+            element={<Home count={count} profile={profilestate} />}
           />
 
           <Route
             path="/shop"
-            exact
             element={<Shop count={count} dispatch={dispatch} />}
           />
 
           <Route
             path="/cart"
-            exact
             element={<Cart count={count} dispatch={dispatch} />}
           />
 
           <Route
             path="/login"
-            exact
-            element={<Login setisLogin={setisLogin} />}
+            element={<Login setProfile={setProfileState} />}
           />
 
-          <Route path="/register" exact element={<Signup />} />
-
+          <Route path="/register" element={<Signup />} />
         </Routes>
       </Router>
     </>

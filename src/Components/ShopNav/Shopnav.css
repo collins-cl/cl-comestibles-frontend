@@ -58,27 +58,18 @@
   font-size: 12px;
   font-family: "Roboto";
   font-weight: bold;
+  cursor: pointer;
   transition: all 1s ease;
 }
 
 .secondshopnav.active a:nth-child(1)::after {
-  width: 3.3em;
-  margin-left: -2.8em;
+  width: 6em;
+  margin-left: -6.3em;
 }
 
 .secondshopnav.active a:nth-child(2)::after {
-  width: 3.4em;
-  margin-left: -3.1em;
-}
-
-.secondshopnav.active a:nth-child(3)::after {
-  width: 5em;
-  margin-left: -5em;
-}
-
-.secondshopnav.active a:nth-child(4)::after {
-  width: 5.8em;
-  margin-left: -6.4em;
+  width: 5.4em;
+  margin-left: -5.1em;
 }
 
 .bhome{
@@ -89,6 +80,11 @@
   color: teal;
 }
 
+.shop-icon-events{
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+}
 
 .secondshopnav.active a::after {
   position: absolute;
@@ -163,20 +159,12 @@
     font-size: 23px;
     font-weight: bold;
   }
-  .secondshopnav a:nth-child(3) {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .secondshopnav a:nth-child(4) {
-    font-size: 26px;
-    font-weight: bold;
-  }
-  .secondshopnav a:nth-child(5) {
-    font-size: 28px;
-    font-weight: bold;
-  }
 
   .bhome{
       display: block;
+  }
+
+  .shop-icon-events{
+    margin-right: -5px;
   }
 }

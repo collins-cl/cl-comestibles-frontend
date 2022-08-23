@@ -1,0 +1,66 @@
+.maincourse {
+  padding-top: 13em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.maincourse .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.maincourse-heading {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.maincourse-description {
+  font-size: 18px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.maincourse-item {
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .maincourse {
+    padding-top: 6em;
+    max-width: 95vw;
+    margin: auto;
+  }
+
+  .maincourse .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .maincourse-description {
+    font-size: 18px;
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+  }
+
+  .maincourse-item {
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+}

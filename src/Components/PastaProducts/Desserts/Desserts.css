@@ -1,0 +1,97 @@
+.desserts-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 280px !important;
+  position: relative !important;
+  border-radius: 5px !important;
+  box-shadow: 0 1px 7px 0px rgba(0, 0, 0, 0.562) !important;
+}
+
+.desserts-image {
+  width: 280px !important;
+  height: 250px !important;
+  /* padding: 25px !important; */
+  position: relative !important;
+  cursor: pointer !important;
+}
+
+.desserts-image img {
+  width: 200px !important;
+  height: 200px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.desserts-name {
+  font-size: 21px !important;
+  font-weight: bold !important;
+  color: black !important;
+  margin-top: -10px !important;
+}
+
+.desserts-description {
+  text-transform: uppercase !important;
+  font-size: 13px !important;
+  color: black !important;
+  max-width: 170px !important;
+  text-align: center !important;
+  margin-top: 5px !important;
+}
+
+.desserts-price {
+  font-size: 15px !important;
+  color: black !important;
+  margin-top: 5px !important;
+  font-weight: bold !important;
+}
+
+.desserts-cart {
+  width: 100% !important;
+  text-align: end !important;
+  padding: 10px !important;
+}
+
+.addtocart {
+  font-size: 22px !important;
+  cursor: pointer !important;
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .desserts-wrapper {
+    width: 180px !important;
+    position: relative !important;
+    border-radius: 5px !important;
+    box-shadow: 0 1px 7px 0px rgba(0, 0, 0, 0.562) !important;
+  }
+
+  .desserts-image {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  .desserts-image img {
+    width: 150px !important;
+    height: 100px !important;
+  }
+
+  .desserts-name {
+    font-size: 18px !important;
+    margin-top: -7px !important;
+  }
+
+  .desserts-description {
+    font-size: 12px !important;
+  }
+
+  .desserts-price {
+    font-size: 13px !important;
+  }
+
+  .addtocart {
+    font-size: 20px !important;
+  }
+}

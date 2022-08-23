@@ -1,8 +1,9 @@
 import React from "react";
 import PastaDummy from "../PastaDummy";
-import Pastaitem from "./PastaItem/Pastaitem";
+import "../PastaProducts/Dessert.css";
+import Desserts from "./Desserts/Desserts";
 
-const Pastaproduct = ({dispatch}) => {
+const Dessert = ({ dispatch }) => {
   const pastas = PastaDummy;
 
   // to show if products is live and from commerce js
@@ -16,21 +17,21 @@ const Pastaproduct = ({dispatch}) => {
   // if cart is offline == offline products from dummytext would be displayed
 
   const OfflineCart = () => (
-    <div className="p-item">
+    <div className="dessert-item">
       {pastas.map((pasta) => (
-        <Pastaitem dispatch={dispatch} key={pasta.id} pasta={pasta} />
+        <Desserts dispatch={dispatch} key={pasta.id} pasta={pasta} />
       ))}
     </div>
   );
 
   return (
-    <div className="pasta-container">
-      <div className="pancakeproduct" id="pasta">
+    <div className="dessert-container">
+      <div className="dessert" id="dessert">
         <div className="inner">
-          <div className="pp-heading">Pasta</div>
-          <div className="pp-description">
-            Premium quality food, straight from the farm made from rich <br />{" "}
-            pasta and rice miils to suit your taste.
+          <div className="dessert-heading">Dessert</div>
+          <div className="dessert-description">
+            Fresh out of the overn cakes and pies and everything you need for
+            that wonderful dessert satisfaction. Take an order and try a bite!😉
           </div>
           {isLive ? <OfflineCart /> : <OnlineCart />}
         </div>
@@ -39,4 +40,4 @@ const Pastaproduct = ({dispatch}) => {
   );
 };
 
-export default Pastaproduct;
+export default Dessert;

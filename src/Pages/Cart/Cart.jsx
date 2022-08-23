@@ -1,9 +1,9 @@
 import React from "react";
 import "../Cart/Cart.css";
 import { Link } from "react-router-dom";
-import Navbar from "../../Components/NavBar/NavBar";
 import Cartitem from "./CartItem/Cartitem";
 import cartItemsDummy from "../../Components/cartItemsDummy";
+import CartNav from "../../Components/CartNav/CartNav";
 
 const Cart = ({ dispatch, count }) => {
   const cartitems = cartItemsDummy;
@@ -37,7 +37,7 @@ const Cart = ({ dispatch, count }) => {
 
   return (
     <div className="cartbody">
-      <Navbar />
+      <CartNav />
       <div className="shopping-cart">
         {isEmpty ? <EmptyCart /> : <FilledCart />}
       </div>

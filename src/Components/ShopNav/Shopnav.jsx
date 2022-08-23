@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import "../ShopNav/Shopnav.css";
 import ProfileIcon from "../ProfileIcon/ProfileIcon";
 import CartIcon from "../CartIcon/CartIcon";
-import { useLocation } from "react-router-dom";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-function Shopnav({ count, isLogin }) {
-  const location = useLocation();
+function Shopnav({ count }) {
   const [navwrapper, setNavWrapper] = useState(false);
 
   const changeBackground = () => {
@@ -42,26 +40,24 @@ function Shopnav({ count, isLogin }) {
           <div className="logo">
             <a href="/">CL COMESTIBLES</a>
           </div>
-          {location.pathname === "/login" ? null : (
-            <div className="icons-events">
-              <ProfileIcon />
-              <CartIcon count={count} />
-            </div>
-          )}
+
+          <div className="shop-icon-events">
+            <ProfileIcon />
+            <CartIcon count={count} />
+          </div>
         </div>
 
         <div className={open ? "secondshopnav" : "secondshopnav active"}>
-          <Link activeClass="active" spy={true} to="rice" onClick={closeMobile}>
-            RICE
+          <Link
+            activeClass="active"
+            spy={true}
+            to="main-course"
+            onClick={closeMobile}
+          >
+            MAIN-COURSE
           </Link>
-          <Link spy={true} to="pasta" onClick={closeMobile}>
-            PASTA
-          </Link>
-          <Link spy={true} to="pancake" onClick={closeMobile}>
-            PANCAKES
-          </Link>
-          <Link spy={true} to="ketone-diets" onClick={closeMobile}>
-            KETONE-DIETS
+          <Link spy={true} to="dessert" onClick={closeMobile}>
+            DESSERTS
           </Link>
           <a href="/" className="bhome" onClick={closeMobile}>
             BACK HOME

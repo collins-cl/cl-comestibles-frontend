@@ -40,28 +40,7 @@ const PastaDummy = [
     name: "Macaroni",
     description: " Perfect for the early morning routine",
     price: "$9.75",
-  },
-  {
-    id: 7,
-    image: "/Images/pennepasta.jpeg",
-    name: "Pennepasta",
-    description: " Perfect for the early morning routine",
-    price: "$11.75",
-  },
-  {
-    id: 8,
-    image: "/Images/Rigatoni.jpeg",
-    name: "Rigatoni",
-    description: " Perfect for the early morning routine",
-    price: "$15.75",
-  },
-  {
-    id: 9,
-    image: "/Images/spa-and-meatballs.jpeg",
-    name: "Spaghetti",
-    description: " Perfect for the early morning routine",
-    price: "$18.75",
-  },
+  }
 ];
 
 export default PastaDummy;

@@ -44,16 +44,13 @@ function NavBar({ count, profile }) {
           </div>
           {location.pathname === "/login" ? null : (
             <div className="icons-events">
-              <ProfileIcon profile={profile}/>
+              <ProfileIcon />
               <CartIcon count={count} />
             </div>
           )}
         </div>
 
         <div className={open ? "secondnav" : "secondnav active"}>
-          <Link to="/" onClick={closeMobile}>
-            FASTFOOD
-          </Link>
           <Link to="/shop" onClick={closeMobile}>
             SHOP
           </Link>

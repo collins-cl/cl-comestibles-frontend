@@ -1,13 +1,11 @@
 import React from "react";
 import "../Shop/Shop.css";
 import Ads from "../../Components/Adsbar/Ads";
-import Pastaproduct from "../../Components/PastaProducts/Pastaproduct";
 import Shopnav from "../../Components/ShopNav/Shopnav";
-import Pancakeproduct from "../../Components/PancakesProducts/Pancakeproduct";
-import Ketoneproducts from "../../Components/KetoneProducts/Ketoneproducts";
-import Riceproducts from "../../Components/RiceProductss/Riceproducts";
 import Footer from "../../Components/Footer/Footer";  
 import Twitter from "../../Components/Twitter/Twitter";  
+import Dessert from "../../Components/PastaProducts/Dessert";
+import MainCourse from "../../Components/Maincourse/MainCourse";
 
 const Shop = ({dispatch, count}) => {
   return (
@@ -21,10 +19,8 @@ const Shop = ({dispatch, count}) => {
         laborum!
       </div>
       <div className="products-section">
-        <Riceproducts dispatch={dispatch} />
-        <Pastaproduct  dispatch={dispatch}/>
-        <Pancakeproduct />
-        <Ketoneproducts />
+        <MainCourse dispatch={dispatch} />
+        <Dessert  dispatch={dispatch}/>
       </div>
       <Twitter/>
       

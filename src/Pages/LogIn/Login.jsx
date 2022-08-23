@@ -1,58 +1,30 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../LogIn/Login.css";
 import { Alert } from "@mui/material";
 import Navbar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import axios from "axios";
+import useUserContext from "../../context/userContext";
 
-const Login = ({  setProfile }) => {
-  const navigate = useNavigate();
+const Login = () => {
+  const {
+    message,
+    setmessage,
+    handleChange,
+    handleSubmit,
+    password,
+    email,
+    loginsuccess,
+    removelogin,
+  } = useUserContext();
 
-  const initialState = {
-    email: "",
-    password: "",
+  const handleChangeHandler = (e) => {
+    handleChange(e);
   };
 
-  const [state, setState] = useState(initialState);
-  const [loginsuccess, setLoginSuccess] = useState("lol");
-  const [removelogin, setRemoveLogin] = useState(false);
-  const [message, setMessage] = useState(false);
-  const [setmessage, setSetMessage] = useState(false);
-
-  const { email, password } = state;
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState({ ...state, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const response = axios
-      .post("http://localhost:5000/api/users/login", {
-        email,
-        password,
-      })
-      .then((result) => {
-        if (result.data.error) {
-          setSetMessage(true);
-          setMessage(result.data.error);
-        } else {
-          setState(initialState);
-          setLoginSuccess(result.data.success);
-          setSetMessage(false);
-          setRemoveLogin(true);
-          setTimeout(() => {
-            navigate("/");
-          }, 3000);
-          setProfile(result.data.user)
-          localStorage.setItem("accessToken", result.data.accessToken);
-        }
-      })
-      .catch((result) => {
-        console.log(result.data.error);
-      });
+  const handleSubmitHandler = (e) => {
+    handleSubmit(e);
   };
 
   return (
@@ -69,7 +41,7 @@ const Login = ({  setProfile }) => {
             </div>
 
             <div className="login-form">
-              <form action="post" onSubmit={handleSubmit}>
+              <form action="post" onSubmit={handleSubmitHandler}>
                 <div className={removelogin ? "true" : "false"}>
                   <Alert severity="success" sx={{ width: "100%" }}>
                     {loginsuccess}
@@ -81,7 +53,7 @@ const Login = ({  setProfile }) => {
                     type="email"
                     name="email"
                     value={email}
-                    onChange={handleChange}
+                    onChange={handleChangeHandler}
                     placeholder="example@mail.com"
                     required
                   />
@@ -97,7 +69,7 @@ const Login = ({  setProfile }) => {
                     type="password"
                     name="password"
                     value={password}
-                    onChange={handleChange}
+                    onChange={handleChangeHandler}
                     placeholder="password"
                     required
                   />

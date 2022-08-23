@@ -6,6 +6,8 @@ import Shop from "./Pages/Shop/Shop";
 import Cart from "./Pages/Cart/Cart";
 import Login from "./Pages/LogIn/Login";
 import Signup from "./Pages/SignUp/Signup";
+import Profile from "./Pages/Profile/Profile";
+import { CookiesProvider } from "react-cookie";
 
 const initialState = null;
 const reducer = (state, action) => {
@@ -26,33 +28,37 @@ function App() {
 
   return (
     <>
-      <Router>
-        <div className="App"></div>
-        <Routes>
-          <Route
-            path="/"
-            exact
-            element={<Home count={count} profile={profilestate} />}
-          />
+      <CookiesProvider>
+        <Router>
+          <div className="App"></div>
+          <Routes>
+            <Route
+              path="/"
+              exact
+              element={<Home count={count} profile={profilestate} />}
+            />
 
-          <Route
-            path="/shop"
-            element={<Shop count={count} dispatch={dispatch} />}
-          />
+            <Route
+              path="/shop"
+              element={<Shop count={count} dispatch={dispatch} />}
+            />
 
-          <Route
-            path="/cart"
-            element={<Cart count={count} dispatch={dispatch} />}
-          />
+            <Route
+              path="/cart"
+              element={<Cart count={count} dispatch={dispatch} />}
+            />
 
-          <Route
-            path="/login"
-            element={<Login setProfile={setProfileState} />}
-          />
+            <Route
+              path="/login"
+              element={<Login setProfile={setProfileState} />}
+            />
 
-          <Route path="/register" element={<Signup />} />
-        </Routes>
-      </Router>
+            <Route path="/register" element={<Signup />} />
+
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </Router>
+      </CookiesProvider>
     </>
   );
 }

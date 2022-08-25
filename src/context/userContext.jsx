@@ -17,20 +17,24 @@ const useUserContext = () => {
   const [setmessage, setSetMessage] = useState(false);
   const { email, password } = state;
 
-  const handleChange = (e) => {
+  const handleChange =  (e) => {
     const { name, value } = e.target;
     setState({ ...state, [name]: value });
   };
 
   const accessToken = localStorage.getItem("accessToken");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = axios
-      .post("http://localhost:5000/api/users/login", {
-        email,
-        password,
-      })
+    const response = await axios
+      .post(
+        "http://localhost:5000/api/users/login",
+        {
+          email,
+          password,
+        },
+        { withCredentials: true }
+      )
       .then((result) => {
         if (result.data.error) {
           setSetMessage(true);

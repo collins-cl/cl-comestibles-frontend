@@ -26,7 +26,7 @@
 }
 
 .container-1 .details {
-  margin-top: .6em;
+  margin-top: 0.6em;
   font-size: 19px;
   color: teal;
 }
@@ -36,7 +36,7 @@
   height: 300px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   .ark {
     height: 100vh;
     background-color: aquamarine;
@@ -46,11 +46,11 @@
 
   .ark-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4em;
-    padding-top: 3em;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    gap: 4em !important;
+    padding-top: 3em !important;
   }
 
   .container-1 {
@@ -74,6 +74,6 @@
 
   .container-2 img {
     width: 350px;
-    height:250px;
+    height: 250px;
   }
 }

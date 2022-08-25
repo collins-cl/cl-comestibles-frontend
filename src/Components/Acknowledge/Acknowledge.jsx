@@ -1,5 +1,5 @@
 import React from "react";
-import "../Acknowledge/Acknowledge.css";
+import "../Acknowledge/acknowledge.css";
 import pic6 from "../Assets/pic6.jpg"
 
 function Acknowledge() {

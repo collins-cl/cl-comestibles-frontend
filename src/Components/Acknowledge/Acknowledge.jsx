@@ -1,6 +1,6 @@
 import React from "react";
 import "../Acknowledge/acknowledge.css";
-import pic6 from "../Assets/pic6.jpg"
+import pic6 from "../Assets/pic6.jpg";
 
 function Acknowledge() {
   return (
@@ -17,7 +17,7 @@ function Acknowledge() {
           </div>
         </div>
         <div className="container-2">
-            <img src={pic6} alt="" />
+          <img src={pic6} alt="" />
         </div>
       </div>
     </div>

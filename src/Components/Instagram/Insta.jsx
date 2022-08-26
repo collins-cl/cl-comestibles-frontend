@@ -15,7 +15,7 @@ function Insta() {
 
       <div className="shop-insta">
             <a href="/">SHOP ON OUR INSTAGRAM</a>
-        </div>z
+        </div>
     </div>
   );
 }

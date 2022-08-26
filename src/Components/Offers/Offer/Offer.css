@@ -45,7 +45,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .offer {
     display: flex;
     justify-content: center;
@@ -63,10 +63,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
-    height: 380px;
-    margin-top: -15px;
-    width: 300px;
+    gap: 0;
+    width: 65vw;
+    height: 55vh;
+    margin-top: 5px;
+  }
+
+  .offer-cont > div{
+    margin-bottom: .4em;
   }
 
   .offername {
@@ -87,7 +91,7 @@
   .shop-now a {
     font-size: 14px;
     background-color: teal;
-    padding: 8px 30px;
+    padding: .7em 3em;
     border-radius: 5px;
     color: white;
     font-weight: bold;

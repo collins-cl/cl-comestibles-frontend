@@ -10,8 +10,16 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .offers {
-    margin-top: 7em !important;
+    margin-top: 9em;
+  }
+
+  .offers-container{
+    gap: 0;
+  }
+
+  .offers-container > div{
+    margin-top: 3em;
   }
 }

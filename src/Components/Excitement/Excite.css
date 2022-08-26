@@ -59,7 +59,11 @@
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-    gap: 5em;
+    gap: 0;
+  }
+
+  .excite-image {
+    margin-top: 3.5em;
   }
 
   .excite-other {
@@ -67,7 +71,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3em;
+    gap: 0;
   }
 
   .excite-other .body {
@@ -89,6 +93,10 @@
   .body p {
     margin-top: 2em;
     color: white;
+  }
+
+  .excite-other .shopnow {
+    margin-top: 3em;
   }
 
   .excite-other .shopnow a {

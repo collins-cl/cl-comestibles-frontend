@@ -1,8 +1,12 @@
-.offer {
+.offer .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 250px;
+  margin: auto;
+  padding: 2em 1em;
   flex-direction: column;
+  border-radius: 5px;
   box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.562);
 }
 
@@ -11,89 +15,52 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3px;
-  height: 380px;
-  margin-top: -15px;
-  width: 250px;
+  margin-top: -0.6em;
 }
 
-.offer:hover{
-  transition: all .5s;
+.offer:hover {
+  transition: all 0.5s;
   transform: translateY(-30px);
 }
 
+.offer-cont > div {
+  margin-top: 0.3em;
+}
+
+.offer-image {
+  max-width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-image img {
+  width: 180px;
+  height: 150px;
+}
+
 .offername {
-  text-transform: capitalize;
   font-weight: bold;
+  font-size: 21px;
+  text-transform: capitalize;
 }
 
 .offer-desc {
-  font-size: 13px;
-  max-width: 220px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.shop-now {
-  margin-top: 10px;
+.offer-cont .shop-now {
+  margin-top: 1em;
 }
 
-.shop-now a {
-  font-size: 12px;
+.offer-cont .shop-now a {
+  font-size: 15px;
+  padding: 0.6em 2.5em;
   background-color: teal;
-  padding: 8px 30px;
-  border-radius: 5px;
   color: white;
   font-weight: bold;
-}
-
-@media screen and (max-width: 600px) {
-  .offer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.562);
-  }
-
-  .offer:hover{
-    transform: none;
-  }
-
-  .offer-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    width: 65vw;
-    height: 55vh;
-    margin-top: 5px;
-  }
-
-  .offer-cont > div{
-    margin-bottom: .4em;
-  }
-
-  .offername {
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 18px;
-  }
-
-  .offer-desc {
-    font-size: 15px;
-    max-width: 220px;
-  }
-
-  .shop-now {
-    margin-top: 10px;
-  }
-
-  .shop-now a {
-    font-size: 14px;
-    background-color: teal;
-    padding: .7em 3em;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-  }
+  border-radius: 5px;
 }

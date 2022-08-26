@@ -63,7 +63,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   .footercontainer {
-    padding: 3em;
+    padding: 1em;
   }
 
   .col1 {
@@ -71,7 +71,7 @@ footer {
     justify-content: start;
     align-items: start;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+    gap: 1.5em;
   }
 
   .col2 {

@@ -72,15 +72,15 @@
   margin-left: -5.1em;
 }
 
-.bhome{
-    display: none;
+.bhome {
+  display: none;
 }
 
-.active{
+.active {
   color: teal;
 }
 
-.shop-icon-events{
+.shop-icon-events {
   margin-right: 2em;
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@
   color: teal;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .first-nav {
     display: flex;
     justify-content: space-between;
@@ -160,11 +160,27 @@
     font-weight: bold;
   }
 
-  .bhome{
-      display: block;
+  .bhome {
+    display: block;
   }
 
-  .shop-icon-events{
+  .shop-icon-events {
     margin-right: -5px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .hamburger{
+    font-size: 20px;
+  }
+  .logo a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-left: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 0;
+    cursor: pointer;
   }
 }

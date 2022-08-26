@@ -37,8 +37,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: center;
     height: 50vh;
   }

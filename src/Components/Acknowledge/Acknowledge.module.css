@@ -1,79 +1,81 @@
 .ark {
-  height: 100vh;
   background-color: aquamarine;
   position: relative;
-  margin-top: 8em;
-  margin-bottom: 5em;
+  margin-top: 10em;
+  margin-bottom: 7em;
 }
 
-.ark-container {
+.arkcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 9em;
-  padding-top: 10em;
+  padding: 4em;
 }
 
-.container-1 {
+.container1 {
   max-width: 450px;
 }
 
-.container-1 .head {
+.container1 .head {
   font-size: 4em;
   color: rgb(3, 116, 116);
   font-weight: 500;
   font-family: "WaterBrush";
 }
 
-.container-1 .details {
+.container1 .details {
   margin-top: 0.6em;
   font-size: 19px;
   color: teal;
 }
 
-.container-2 img {
+.container2 img {
   width: 400px;
   height: 300px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .ark {
-    height: 100vh;
     background-color: aquamarine;
     position: relative;
+    max-width: 95vw;
+    margin: auto;
     margin-top: 8em;
+    margin-bottom: 2em;
   }
 
-  .ark-container {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column !important;
-    gap: 4em !important;
-    padding-top: 3em !important;
+  .arkcontainer {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4em;
+    padding: 2em;
   }
 
-  .container-1 {
-    max-width: 420px;
+  .container1 {
+    max-width: 80vw;
     margin: 0 auto;
   }
 
-  .container-1 .head {
+  .container1 .head {
     font-size: 30px;
     color: rgb(3, 116, 116);
     font-weight: 500;
     text-align: center;
   }
 
-  .container-1 .details {
+  .container1 .details {
     margin-top: 1.3em;
-    max-width: 400px;
+    max-width: 80vw;
     font-size: 18px;
     color: teal;
+    text-align: center;
   }
 
-  .container-2 img {
-    width: 350px;
+  .container2 img {
+    width: 80vw;
     height: 250px;
   }
 }

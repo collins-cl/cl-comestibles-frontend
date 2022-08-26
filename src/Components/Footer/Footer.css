@@ -62,7 +62,7 @@ footer {
   font-weight: bold;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   footer {
     height: 100vh;
   }

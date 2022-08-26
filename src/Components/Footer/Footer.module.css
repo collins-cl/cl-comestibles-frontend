@@ -16,6 +16,10 @@ footer {
   row-gap: 3em;
 }
 
+.col3 a{
+  color: white;
+}
+
 .col3 p {
   font-size: 13px;
   margin-top: 10px;
@@ -68,9 +72,8 @@ footer {
 
   .col1 {
     display: grid;
-    justify-content: start;
-    align-items: start;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-content: center;
     gap: 1.5em;
   }
 
@@ -82,6 +85,10 @@ footer {
     justify-content: center;
     gap: 1.5em;
     margin-top: 2em;
+  }
+
+  .col3:first-child{
+    display: none;
   }
 
   .heading {

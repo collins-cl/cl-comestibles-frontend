@@ -56,7 +56,8 @@
   }
 
   .big-image img {
-    width: 350px;
+    max-width: 95vw;
+    margin: auto;
     background-size: contain;
   }
 }

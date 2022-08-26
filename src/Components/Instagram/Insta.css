@@ -1,42 +1,101 @@
-.insta-wrap{
+.insta-wrap {
+  margin-top: 8em;
+  margin-bottom: 5em;
+}
+
+.insta {
+  width: 95%;
+  background-color: teal;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.562);
+}
+
+.insta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 15px;
+}
+
+.at-tag {
+  font-size: 18px;
+}
+
+.hash span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.shop-insta {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.shop-insta a {
+  color: white;
+  padding: 0.7em 3em;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .insta-wrap {
+    max-width: 95vw;
+    margin: auto;
     margin-top: 8em;
     margin-bottom: 5em;
-}
+  }
 
-.insta{
-    width: 95%;
-    background-color: teal;
+  .insta {
+    max-width: 95vw;
     margin: auto;
+    background-color: teal;
     border-radius: 5px;
     box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.562);
-}
+  }
 
-.insta-container{
+  .insta-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 15px;
-}
+    padding: 10px;
+  }
 
-.at-tag{
+  .at-tag {
     font-size: 18px;
-}
+  }
 
-.hash span{
+  .hash span {
     font-weight: bold;
     font-size: 18px;
-}
+  }
 
-.shop-insta{
+  .shop-insta {
     text-align: center;
     margin-top: 2em;
-}
+  }
 
-.shop-insta a{
+  .shop-insta a {
     color: white;
-    padding: .7em 3em;
+    padding: 0.7em 3em;
     border-radius: 5px;
     font-size: 15px;
     background-color: black;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .insta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .at-tag {
+    display: none;
+  }
 }

@@ -58,58 +58,66 @@ button {
   border: none;
 }
 
-.login-account-link{
+.login-account-link {
   margin-top: 1em;
   font-size: 15px;
 }
 
-.login-account-link a{
+.login-account-link a {
   font-weight: bold;
   text-decoration: underline;
 }
 
-.true{
+.true {
   display: block;
 }
 
-.false{
+.false {
   display: none;
 }
 
-.alert{
-
-}
-
-@media screen and (min-width: 375px) and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .login-container {
-    max-width: 380px;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 4em;
   }
 
   .login-section {
-    max-width: 375px;
-    gap: 2.3em;
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
   }
 
-  .login-head {
-    font-size: 23px;
+  .login-section > div {
+    margin-top: 2em;
+  }
+
+  .login-info {
+    max-width: 70vw;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
   }
 
   .login-form form {
-    gap: 2.5em;
-  }
-
-  label {
-    font-size: 13px;
-  }
-
-  input,
-  button {
     width: 100%;
-    padding: 15px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+    margin-top: -1.5em;
   }
 
-  .alert{
-    
+  .login-form form > div {
+    margin-top: 2em;
+  }
+
+  .login-account-link{
+    text-align: center;
   }
 }

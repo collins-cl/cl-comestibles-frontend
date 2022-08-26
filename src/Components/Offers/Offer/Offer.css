@@ -64,3 +64,9 @@
   font-weight: bold;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 600px){
+  .offer .wrapper{
+    max-width: 70vw;
+  }
+}

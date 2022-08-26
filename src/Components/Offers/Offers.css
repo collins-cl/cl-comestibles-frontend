@@ -11,6 +11,11 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .offers{
+    margin-top: 6em;
+  }
+
   .offers-container {
     display: flex;
     justify-content: center;
@@ -19,7 +24,7 @@
     flex-wrap: wrap;
   }
 
-  .offers-container > div {
+  .offers-container > div{
     margin-top: 3em;
   }
 }

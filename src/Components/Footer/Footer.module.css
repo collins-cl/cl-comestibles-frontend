@@ -63,7 +63,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   .footercontainer {
-    padding: 2em;
+    padding: 3em;
   }
 
   .col1 {

@@ -24,9 +24,9 @@
   display: none;
 }
 
-.logo a{
+.logo a {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin: auto;
   text-align: center;
@@ -61,36 +61,36 @@
   transition: all 1s ease;
 }
 
-.secondnav.active a:nth-child(1)::after{
+.secondnav.active a:nth-child(1)::after {
   width: 5.8em;
   margin-left: -5.4em;
 }
 
-.secondnav.active a:nth-child(2)::after{
+.secondnav.active a:nth-child(2)::after {
   width: 3em;
   margin-left: -2.8em;
 }
 
-.secondnav.active a:nth-child(3)::after{
+.secondnav.active a:nth-child(3)::after {
   width: 7em;
   margin-left: -7.4em;
 }
 
-.secondnav.active a:nth-child(4)::after{
+.secondnav.active a:nth-child(4)::after {
   width: 5.5em;
   margin-left: -5.5em;
 }
 
-.secondnav.active a:nth-child(5)::after{
+.secondnav.active a:nth-child(5)::after {
   width: 4.8em;
   margin-left: -5em;
 }
-.secondnav.active a:nth-child(6)::after{
+.secondnav.active a:nth-child(6)::after {
   width: 3em;
   margin-left: -3em;
 }
 
-.secondnav.active a::after{
+.secondnav.active a::after {
   position: absolute;
   content: "";
   height: 1px;
@@ -98,7 +98,6 @@
   margin-top: 18px;
   margin-left: -3.5em;
   background-color: teal;
-
 }
 
 .secondnav.active a:hover {
@@ -106,14 +105,12 @@
   color: teal;
 }
 
-.link-to-login a{
+.link-to-login a {
   color: teal;
   font-weight: bold;
-
-
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .first-nav {
     display: flex;
     justify-content: space-between;
@@ -186,5 +183,18 @@
   .secondnav a:nth-child(6) {
     font-size: 35px;
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .logo a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-left: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 0;
+    cursor: pointer;
   }
 }

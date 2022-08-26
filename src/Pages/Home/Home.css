@@ -32,15 +32,17 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .sendEmail {
+    max-width: 90vw;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     text-align: center;
-    height: 50vh;
+    height: calc(100vh - 70vh);
   }
 
   .email-container {
@@ -54,7 +56,7 @@
   }
 
   .big-image img {
-      width: 350px;
+    width: 350px;
     background-size: contain;
   }
 }

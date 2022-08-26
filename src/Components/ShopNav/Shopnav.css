@@ -141,10 +141,14 @@
   .secondshopnav {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 0;
     height: 90vh;
     margin-top: 1.3em;
     margin-left: 20px;
+  }
+
+  .secondshopnav > a {
+    margin-top: 2.5em;
   }
 
   .secondshopnav a:hover {
@@ -162,6 +166,8 @@
 
   .bhome {
     display: block;
+    font-size: 25px;
+    font-weight: bold;
   }
 
   .shop-icon-events {
@@ -170,7 +176,20 @@
 }
 
 @media screen and (max-width: 390px) {
-  .hamburger{
+  .secondshopnav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 90vh;
+    margin-top: 1.3em;
+    margin-left: 20px;
+  }
+
+  .secondshopnav > a {
+    margin-top: 2.5em;
+  }
+  
+  .hamburger {
     font-size: 20px;
   }
   .logo a {
@@ -182,5 +201,11 @@
     letter-spacing: 1px;
     word-spacing: 0;
     cursor: pointer;
+  }
+
+  .bhome {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
   }
 }

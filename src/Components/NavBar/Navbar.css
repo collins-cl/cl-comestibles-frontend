@@ -150,10 +150,14 @@
   .secondnav {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 0;
     height: 90vh;
     margin-top: 1.3em;
     margin-left: 20px;
+  }
+
+  .secondnav > a{
+    margin-top: 2.5em;
   }
 
   .secondnav a:hover {
@@ -187,6 +191,19 @@
 }
 
 @media screen and (max-width: 390px) {
+  .secondnav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 90vh;
+    margin-top: 1.3em;
+    margin-left: 20px;
+  }
+
+  .secondnav > a{
+    margin-top: 2.5em;
+  }
+
   .hamburger {
     font-size: 20px;
   }

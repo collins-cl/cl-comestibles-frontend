@@ -1,66 +1,85 @@
 .dessert {
-  padding-top: 13em !important;
-  max-width: 1200px !important;
-  margin: auto !important;
+  padding-top: 13em;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .inner {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 1em !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 .dessert-heading {
-  font-size: 30px !important;
-  font-weight: bold !important;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .dessert-description {
-  font-size: 18px !important;
-  max-width: 900px !important;
-  margin: auto !important;
-  text-align: center !important;
+  font-size: 18px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
 .dessert-item {
-  margin-top: 3em !important;
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 1.5em !important;
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
 }
 
-@media screen and (min-width: 350px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .dessert {
-    padding-top: 6em !important;
-    max-width: 95vw !important;
-    margin: auto !important;
+    padding-top: 6em;
+    max-width: 95vw;
+    margin: auto;
   }
 
   .dessert .inner {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 1.5em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .dessert .inner > div {
+    margin-top: 2em;
   }
 
   .dessert-description {
-    font-size: 18px !important;
-    max-width: 80vw !important;
-    margin: auto !important;
-    text-align: center !important;
+    font-size: 18px;
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
   }
 
   .dessert-item {
-    margin-top: 2em !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 2em !important;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .dessert-item {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
   }
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import PastaDummy from "../PastaDummy";
-import "../Maincourse/Maincourse.css"
+import "../Maincourse/Maincourse.css";
 import Desserts from "../PastaProducts/Desserts/Desserts";
 
-const MainCourse = ({dispatch}) => {
+const MainCourse = ({ dispatch }) => {
   const pastas = PastaDummy;
 
   //   to show if products is live and from commerce js
@@ -32,7 +32,7 @@ const MainCourse = ({dispatch}) => {
           well bred stocks and made by the best chefs to suit your taste.
         </div>
       </div>
-      {isLive ? <OfflineCart /> : <OnlineCart />}
+      <div>{isLive ? <OfflineCart /> : <OnlineCart />}</div>
     </div>
   );
 };

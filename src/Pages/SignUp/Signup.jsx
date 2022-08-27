@@ -75,7 +75,7 @@ const Signup = () => {
                   name="firstname"
                   value={firstname}
                   onChange={handleChange}
-                  placeholder="My First Name"
+                  placeholder="Your First Name"
                   required
                 />
               </div>
@@ -86,7 +86,7 @@ const Signup = () => {
                   name="surname"
                   value={surname}
                   onChange={handleChange}
-                  placeholder="My Surname"
+                  placeholder="Your Surname"
                   required
                 />
               </div>

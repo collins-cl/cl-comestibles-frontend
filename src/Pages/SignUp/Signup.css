@@ -79,10 +79,11 @@ button {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .signup-container {
     max-width: 95vw;
     margin: auto;
+    margin-top: 2em;
     justify-content: center;
     align-items: center;
   }

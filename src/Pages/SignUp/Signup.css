@@ -46,11 +46,11 @@ button {
   margin-top: 8px;
 }
 
-input{
+input {
   font-size: 16px;
 }
 
-input::placeholder{
+input::placeholder {
   font-size: 14px;
 }
 
@@ -69,31 +69,32 @@ button {
   border: none;
 }
 
-.create-account-link{
+.create-account-link {
   font-size: 15px;
   margin-top: 1em;
 }
 
-.create-account-link a{
+.create-account-link a {
   font-weight: bold;
   text-decoration: underline;
 }
 
-@media screen and (min-width: 375px) and (max-width: 540px) {
-
-    .signup-container {
-        max-width: 1100px;
-        justify-content: center;
-        align-items: center;
-      }
-
+@media screen and (max-width: 540px) {
   .signup-container {
-    max-width: 380px;
+    max-width: 95vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .signup-section {
-    max-width: 375px;
-    gap: 2em;
+    max-width: 90vw;
+    margin: auto;
+    gap: 0;
+  }
+
+  .signup-section > div {
+    margin-top: 2em;
   }
 
   .signup-head {
@@ -102,7 +103,15 @@ button {
   }
 
   .signup-form form {
-    gap: 2.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .signup-form form > div {
+    margin-top: 1.5em;
   }
 
   label {
@@ -112,11 +121,15 @@ button {
   input,
   button {
     width: 100%;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 18px;
+    margin-top: 6px;
   }
 
-  input{
+  input {
+    font-size: 17px;
+  }
+
+  input::placeholder {
     font-size: 16px;
   }
 }

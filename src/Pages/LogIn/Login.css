@@ -92,6 +92,9 @@ button {
     flex-direction: column;
     gap: 0;
   }
+  .login-head{
+    text-align: center;
+  }
 
   .login-section > div {
     margin-top: 2.2em;

@@ -126,6 +126,10 @@ button {
     margin-top: 6px;
   }
 
+  button{
+    padding: 17px;
+  }
+
   input {
     font-size: 17px;
   }

@@ -55,9 +55,6 @@ function NavBar({ count, profile }) {
             SHOP
           </Link>
           <Link to="/" onClick={closeMobile}>
-            LOCATE A SHOP
-          </Link>
-          <Link to="/" onClick={closeMobile}>
             FLASHSALE
           </Link>
           <Link to="/" onClick={closeMobile}>

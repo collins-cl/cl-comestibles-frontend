@@ -62,32 +62,23 @@
 }
 
 .secondnav.active a:nth-child(1)::after {
-  width: 5.8em;
-  margin-left: -5.4em;
+  width: 3.8em;
+  margin-left: -3.4em;
 }
 
 .secondnav.active a:nth-child(2)::after {
-  width: 3em;
-  margin-left: -2.8em;
+  width: 6em;
+  margin-left: -5.8em;
 }
 
 .secondnav.active a:nth-child(3)::after {
-  width: 7em;
-  margin-left: -7.4em;
+  width: 6em;
+  margin-left: -5.4em;
 }
 
 .secondnav.active a:nth-child(4)::after {
-  width: 5.5em;
-  margin-left: -5.5em;
-}
-
-.secondnav.active a:nth-child(5)::after {
-  width: 4.8em;
-  margin-left: -5em;
-}
-.secondnav.active a:nth-child(6)::after {
-  width: 3em;
-  margin-left: -3em;
+  width: 3.5em;
+  margin-left: -3.2em;
 }
 
 .secondnav.active a::after {
@@ -156,7 +147,7 @@
     margin-left: 20px;
   }
 
-  .secondnav > a{
+  .secondnav > a {
     margin-top: 2.5em;
   }
 
@@ -180,14 +171,6 @@
     font-size: 28px;
     font-weight: bold;
   }
-  .secondnav a:nth-child(5) {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .secondnav a:nth-child(6) {
-    font-size: 35px;
-    font-weight: bold;
-  }
 }
 
 @media screen and (max-width: 390px) {
@@ -200,7 +183,7 @@
     margin-left: 20px;
   }
 
-  .secondnav > a{
+  .secondnav > a {
     margin-top: 2.5em;
   }
 

@@ -54,7 +54,7 @@ function NavBar({ count, profile }) {
           <Link to="/shop" onClick={closeMobile}>
             SHOP
           </Link>
-          <Link to="/" onClick={closeMobile}>
+          <Link to="/flashsale" onClick={closeMobile}>
             FLASHSALE
           </Link>
           <Link to="/" onClick={closeMobile}>

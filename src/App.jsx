@@ -8,6 +8,7 @@ import Login from "./Pages/LogIn/Login";
 import Signup from "./Pages/SignUp/Signup";
 import Profile from "./Pages/Profile/Profile";
 import { CookiesProvider } from "react-cookie";
+import Flashsale from "./Components/Flashsale/Flashsale";
 
 const initialState = null;
 const reducer = (state, action) => {
@@ -56,6 +57,8 @@ function App() {
             <Route path="/register" element={<Signup />} />
 
             <Route path="/profile" element={<Profile />} />
+
+            <Route path="/flashsale" element={<Flashsale />} />
           </Routes>
         </Router>
       </CookiesProvider>

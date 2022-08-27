@@ -1,0 +1,122 @@
+.flash-cont {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flash-intro {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(3, 58, 58);
+  text-transform: uppercase;
+}
+
+.flash-img {
+  margin-top: 3em;
+  padding: 1em;
+}
+
+.flash-div {
+  position: relative;
+}
+
+.flash-div .percent-off {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -1em;
+  margin-right: 3em;
+  background-color: red;
+  height: 5em;
+  width: 5em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  font-size: 15px;
+  animation: bounce infinite 2s forwards ease-in;
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.locate {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.flash-link {
+  margin-top: 3em;
+}
+
+.flash-link a {
+  color: white;
+  font-weight: bold;
+  padding: 0.8em 3em;
+  background-color: teal;
+  transition: all 0.3s;
+}
+
+.flash-link a:hover {
+  color: black;
+  border: 1px solid teal;
+  background: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .flash-cont {
+    max-width: 95vw;
+    margin: auto;
+    margin-top: 4em;
+  }
+
+  .flash-img {
+    max-width: 95vw;
+    margin: auto;
+    margin-top: 5em;
+    padding: 1em;
+  }
+
+  .flash-img img{
+    width: 90vw;
+  }
+
+  .flash-div {
+    position: relative;
+  }
+
+  .flash-div .percent-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -3em;
+    margin-right: 1em;
+    background-color: red;
+    height: 4em;
+    width: 4em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    animation: bounce infinite 2s forwards ease-in;
+    line-height: .9em;
+  }
+
+ 
+}

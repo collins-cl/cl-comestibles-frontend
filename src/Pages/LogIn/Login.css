@@ -80,7 +80,7 @@ button {
   .login-container {
     max-width: 90vw;
     margin: auto;
-    margin-top: 4em;
+    margin-top: 2em;
   }
 
   .login-section {
@@ -94,7 +94,7 @@ button {
   }
 
   .login-section > div {
-    margin-top: 2em;
+    margin-top: 2.2em;
   }
 
   .login-info {
@@ -111,6 +111,11 @@ button {
     flex-direction: column;
     gap: 0;
     margin-top: -1.5em;
+  }
+
+  .login-form form input{
+    padding: 15px;
+    
   }
 
   .login-form form > div {

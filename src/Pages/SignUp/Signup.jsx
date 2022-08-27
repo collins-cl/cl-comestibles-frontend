@@ -5,6 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
+import Twitter from "../../Components/Twitter/Twitter";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -133,6 +134,7 @@ const Signup = () => {
           Already have an account? <a href="/login">Log In</a>
         </div>
       </div>
+      <Twitter />
       <Footer />
     </div>
   );

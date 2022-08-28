@@ -81,7 +81,37 @@ button {
     gap: 0;
   }
 
-  .back-to-login a > div{
+  .back-to-login a > div {
     margin-left: 6px;
+  }
+
+  .password-head {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .password-info {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .forgotpass-cont form input,
+  button {
+    width: 90vw;
+    text-align: center;
+  }
+
+  
+.forgotpass-cont form button {
+  padding: 1.4em;
+  border: none;
+}
+}
+
+@media screen and (max-width: 360px) {
+  .forgotpass-cont {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 0.5em;
   }
 }

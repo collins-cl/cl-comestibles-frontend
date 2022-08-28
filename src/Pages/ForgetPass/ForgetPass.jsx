@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CartNav from "../../Components/CartNav/CartNav";
 import "../ForgetPass/Forgetpass.css";
 import Key from "../../Components/Assets/key.svg";
@@ -6,6 +6,21 @@ import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 
 const ForgetPass = () => {
+  const initialState = { email: "" };
+  const [state, setState] = useState(initialState);
+
+  const { email } = state;
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setState({ ...state, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setState(initialState);
+  };
+
   return (
     <div className="forgetpass">
       <CartNav />
@@ -20,14 +35,16 @@ const ForgetPass = () => {
           No worries, we'll send you reset instructions.
         </div>
 
-        <form>
+        <form action="post" onSubmit={handleSubmit}>
           <div className="forget-email">
             <label htmlFor="forget-email"></label>
             <input
               type="email"
-              value=""
+              name="email"
+              value={email}
+              onChange={handleChange}
+              required
               placeholder="Enter your email"
-              
             />
           </div>
 

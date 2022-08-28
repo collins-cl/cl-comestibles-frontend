@@ -10,6 +10,7 @@ import Profile from "./Pages/Profile/Profile";
 import { CookiesProvider } from "react-cookie";
 import Flashsale from "./Components/Flashsale/Flashsale";
 import ForgetPass from "./Pages/ForgetPass/ForgetPass";
+import Resetpass from "./Pages/ResetPass/Resetpass";
 
 const initialState = null;
 const reducer = (state, action) => {
@@ -61,7 +62,9 @@ function App() {
 
             <Route path="/flashsale" element={<Flashsale />} />
 
-            <Route path="/resetpassword" element={<ForgetPass />} />
+            <Route path="/forgetpassword" element={<ForgetPass />} />
+
+            <Route path="/resetpassword" element={<Resetpass />} />
           </Routes>
         </Router>
       </CookiesProvider>

@@ -1,10 +1,9 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../LogIn/Login.css";
 import { Alert } from "@mui/material";
 import Navbar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
-import axios from "axios";
 import useUserContext from "../../context/userContext";
 
 const Login = () => {
@@ -61,7 +60,7 @@ const Login = () => {
 
                 <div className="log-password">
                   <label htmlFor="password" className="f-password">
-                    <Link to="/resetpassword">
+                    <Link to="/forgetpassword">
                       Did you forget your password?
                     </Link>
 

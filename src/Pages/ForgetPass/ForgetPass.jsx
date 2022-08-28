@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import CartNav from "../../Components/CartNav/CartNav";
 import "../ForgetPass/Forgetpass.css";
 import Key from "../../Components/Assets/key.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import axios from "axios";
+import { Alert } from "@mui/material";
 
 const ForgetPass = () => {
+  const navigate = useNavigate();
+
   const initialState = { email: "" };
   const [state, setState] = useState(initialState);
+  const [message, setMessage] = useState("");
+  const [err, setErr] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [suc, setSuc] = useState(false);
 
   const { email } = state;
 
@@ -16,9 +24,28 @@ const ForgetPass = () => {
     setState({ ...state, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setState(initialState);
+    await axios
+      .post("http://localhost:5000/api/users/forgetpassword", {
+        email,
+      })
+      .then((result) => {
+        if (result.data.error) {
+          setState(initialState);
+          setErr(true);
+          setSuccess(false);
+          setMessage(result.data.error);
+        } else {
+          setSuc(true);
+          setErr(false);
+          setSuccess(result.data.success);
+          setState(initialState);
+          // setTimeout(() => {
+          //   navigate("/resetpassword");
+          // }, 1000);
+        }
+      });
   };
 
   return (
@@ -46,6 +73,14 @@ const ForgetPass = () => {
               required
               placeholder="Enter your email"
             />
+          </div>
+
+          <div className={err ? "true" : "false"}>
+            <Alert severity="error">{message}</Alert>
+          </div>
+
+          <div className={suc ? "true" : "false"}>
+            <Alert severity="success">{success}</Alert>
           </div>
 
           <div>

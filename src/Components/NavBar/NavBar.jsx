@@ -40,7 +40,7 @@ function NavBar({ count, profile }) {
             {open ? hamburgerClose : hamburgerOpen}
           </div>
           <div className="logo">
-            <a href="/">CL COMESTIBLES</a>
+            <Link to="/">CL COMESTIBLES</Link>
           </div>
           {location.pathname === "/login" ? null : (
             <div className="icons-events">

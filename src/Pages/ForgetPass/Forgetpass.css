@@ -74,5 +74,14 @@ button {
     margin: auto;
     margin-top: 0.5em;
   }
+  .back-to-login a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
 
+  .back-to-login a > div{
+    margin-left: 6px;
+  }
 }

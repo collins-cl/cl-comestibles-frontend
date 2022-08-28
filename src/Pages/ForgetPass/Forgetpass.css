@@ -1,0 +1,78 @@
+.forgotpass-cont {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.forgotpass-cont > div {
+  margin-top: 1.5em;
+}
+
+.password-img img {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.password-img img:hover {
+  filter: grayscale(100%) opacity(0.7);
+}
+
+.password-head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.password-info {
+  font-size: 15px;
+}
+
+.forgotpass-cont form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotpass-cont form input,
+button {
+  width: 350px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.forgotpass-cont form button {
+  padding: 1.1em;
+  border: none;
+}
+
+.forgotpass-cont form > div {
+  margin-top: 1em;
+}
+
+.back-to-login a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.back-to-login a .text {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .forgotpass-cont {
+    max-width: 95vw;
+    margin: auto;
+    margin-top: 0.5em;
+  }
+
+}

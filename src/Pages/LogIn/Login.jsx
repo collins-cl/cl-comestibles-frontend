@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../LogIn/Login.css";
 import { Alert } from "@mui/material";
 import Navbar from "../../Components/NavBar/NavBar";
@@ -61,7 +61,9 @@ const Login = () => {
 
                 <div className="log-password">
                   <label htmlFor="password" className="f-password">
-                    <a href="/">Did you forget your password?</a>
+                    <Link to="/resetpassword">
+                      Did you forget your password?
+                    </Link>
 
                     <span>PASSWORD</span>
                   </label>
@@ -87,7 +89,8 @@ const Login = () => {
           </div>
 
           <div className="login-account-link">
-            Don't have an account? <a href="/register">Register</a> with us now!
+            Don't have an account? <Link to="/register">Register</Link> with us
+            now!
           </div>
         </div>
         <Footer />

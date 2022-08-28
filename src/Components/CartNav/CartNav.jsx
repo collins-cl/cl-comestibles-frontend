@@ -8,7 +8,7 @@ const CartNav = () => {
   return (
     <div className="cartnav">
       <div className="logo">
-        <a href="/">CL COMESTIBLES</a>
+        <Link to="/">CL COMESTIBLES</Link>
       </div>
 
       <div className="backtoshop">

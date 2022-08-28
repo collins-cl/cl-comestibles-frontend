@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Signup.css";
 import { Alert } from "@mui/material";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import Twitter from "../../Components/Twitter/Twitter";
@@ -131,7 +131,7 @@ const Signup = () => {
         </div>
 
         <div className="create-account-link">
-          Already have an account? <a href="/login">Log In</a>
+          Already have an account? <Link to="/login">Log In</Link>
         </div>
       </div>
       <Twitter />

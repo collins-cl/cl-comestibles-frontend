@@ -1,0 +1,46 @@
+.success-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.success-container > div {
+  margin-top: 1.5em;
+}
+
+.success-head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.success-container .info {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.success-container .resend{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-container .resend > div{
+    margin-left: 5px;
+}
+
+.success-container .resend a{
+    color: rgb(3, 63, 63);
+    font-weight: bold;
+}
+
+@media screen and (max-width : 600px) {
+    .success-container{
+        max-width: 90vw;
+        margin: auto;
+    }
+}

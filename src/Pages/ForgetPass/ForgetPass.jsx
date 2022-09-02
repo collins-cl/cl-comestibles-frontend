@@ -19,7 +19,6 @@ const ForgetPass = () => {
   const [suc, setSuc] = useState(false);
   const [show, setShow] = useState(true);
 
-
   const { email } = state;
 
   const handleChange = (e) => {
@@ -37,12 +36,12 @@ const ForgetPass = () => {
         if (result.data.error) {
           setState(initialState);
           setErr(true);
-          setSuccess(false);
+          setSuc(false);
           setMessage(result.data.error);
+          setShow(true);
         } else {
           setSuc(true);
           setErr(false);
-          setMessage(false);
           setSuccess(result.data.success);
           setState(initialState);
           if (result.data.success) {

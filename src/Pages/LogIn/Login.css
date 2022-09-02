@@ -36,8 +36,8 @@ label {
   font-size: 13px;
 }
 
-input,
-button {
+.login-form form input,
+.login-form form button {
   width: 100%;
   padding: 10px;
   margin-top: 8px;

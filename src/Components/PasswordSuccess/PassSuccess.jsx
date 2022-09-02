@@ -21,20 +21,20 @@ const PassSuccess = ({ setShow }) => {
           We sent a password reset token to your email.
         </div>
 
+        <div className="got-email">
+          <div className="proceed">
+            Got our email? Proceed to{" "}
+            <Link to="/resetpassword">change password</Link> with unique
+            one-time-password sent to you
+          </div>
+        </div>
+
         <div className="resend">
           <div>Didn't get our email? </div>
           <div>
             <div className="a" onClick={() => setShow(true)}>
               Click to resend
             </div>
-          </div>
-        </div>
-
-        <div className="got-email">
-          <div className="proceed">
-            Got our email? Proceed to{" "}
-            <Link to="/resetpassword">change password</Link> with unique
-            one-time-password sent to you
           </div>
         </div>
 

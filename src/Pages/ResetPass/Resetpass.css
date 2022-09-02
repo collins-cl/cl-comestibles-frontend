@@ -23,14 +23,53 @@
   font-size: 15px;
 }
 
-.reset-cont form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1em;
+.reset-cont form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 1em;
 }
 
-.reset-cont form > div{
+.reset-cont form > div {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.new-pass {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  margin-top: 1.27em;
+  cursor: pointer;
+  right: 0;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .reset-cont {
+    max-width: 95vw;
+    margin: auto;
     margin-top: 1em;
+    padding: 0;
+  }
+
+  .reset-head {
+    font-size: 2em;
+  }
+
+  .reset-cont form {
+    max-width: 90vw;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 0;
+  }
 }

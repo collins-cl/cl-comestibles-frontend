@@ -3,7 +3,7 @@ import CartNav from "../../Components/CartNav/CartNav";
 import "../ResetPass/Resetpass.css";
 import KeyGold from "../../Components/Assets/keygold.svg";
 import { Link, useNavigate } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft, FaEye, FaEyeSlash } from "react-icons/fa";
 import axios from "axios";
 import { Alert } from "@mui/material";
 
@@ -14,6 +14,14 @@ const Resetpass = () => {
   };
 
   const [state, setState] = useState(initialState);
+  const [show, setShow] = useState(false);
+
+  const open = <FaEye className="eye" onClick={() => setShow(!show)} />;
+  const close = <FaEyeSlash className="eye" onClick={() => setShow(!show)} />;
+
+  const handleClick = () => {
+    setShow(!show);
+  };
 
   const { otpcode, newpassword } = state;
 
@@ -49,7 +57,7 @@ const Resetpass = () => {
           <div className="otp">
             <label htmlFor="otp">OTP Code</label>
             <input
-              type="text"
+              type="password"
               name="otpcode"
               value={otpcode}
               onChange={handleChange}
@@ -61,13 +69,17 @@ const Resetpass = () => {
           <div className="new-pass">
             <label htmlFor="new-pass">New Password</label>
             <input
-              type="text"
+              type={show ? "text" : "password"}
               name="newpassword"
               value={newpassword}
               onChange={handleChange}
               placeholder="New password"
               required
             />
+
+            <div className="eye" onClick={handleClick}>
+              {show ? open : close}
+            </div>
           </div>
 
           <div>
@@ -75,12 +87,12 @@ const Resetpass = () => {
           </div>
         </form>
 
-        <div className="back-to-login">
+        {/* <div className="back-to-login">
           <Link to="/login">
             <FaArrowLeft style={{ fontSize: "14px" }} />
             <div className="text">Back to log in</div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

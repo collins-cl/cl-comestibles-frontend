@@ -24,7 +24,7 @@ const Resetpass = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/users/resetpassword", {
+    await axios.put("http://localhost:5000/api/users/resetpassword", {
       otpcode,
       newpassword,
     });

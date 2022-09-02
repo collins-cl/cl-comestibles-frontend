@@ -45,7 +45,7 @@ const useUserContext = () => {
           setSetMessage(false);
           setRemoveLogin(true);
           setTimeout(() => {
-            navigate(-1);
+            navigate("/");
           }, 3000);
           localStorage.setItem("accessToken", JSON.stringify(result.data.user));
         }

@@ -66,8 +66,6 @@ function App() {
             <Route path="/forgetpassword" element={<ForgetPass />} />
 
             <Route path="/resetpassword" element={<Resetpass />} />
-
-            <Route path="/linksent" element={<PassSuccess />} />
           </Routes>
         </Router>
       </CookiesProvider>

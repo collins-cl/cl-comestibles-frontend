@@ -1,0 +1,36 @@
+.reset-cont {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.reset-cont > div {
+  margin-top: 0.5em;
+}
+
+.reset-head {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.reset-cont .info {
+  text-align: center;
+  font-size: 15px;
+}
+
+.reset-cont form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.reset-cont form > div{
+    margin-top: 1em;
+}

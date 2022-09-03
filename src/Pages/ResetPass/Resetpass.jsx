@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import CartNav from "../../Components/CartNav/CartNav";
 import "../ResetPass/Resetpass.css";
 import KeyGold from "../../Components/Assets/keygold.svg";
-import { Link, useNavigate } from "react-router-dom";
-import { FaArrowLeft, FaEye, FaEyeSlash } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import axios from "axios";
 import { Alert } from "@mui/material";
 
@@ -13,8 +13,14 @@ const Resetpass = () => {
     newpassword: "",
   };
 
+  const navigate = useNavigate();
+
   const [state, setState] = useState(initialState);
   const [show, setShow] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+  const [err, setErr] = useState(false);
+  const [suc, setSuc] = useState(false);
 
   const open = <FaEye className="eye" onClick={() => setShow(!show)} />;
   const close = <FaEyeSlash className="eye" onClick={() => setShow(!show)} />;
@@ -32,10 +38,31 @@ const Resetpass = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.put("http://localhost:5000/api/users/resetpassword", {
-      otpcode,
-      newpassword,
-    });
+    setTimeout(() => {
+      navigate("/login");
+    }, 2000);
+    // await axios
+    //   .put("http://localhost:5000/api/users/resetpassword", {
+    //     otpcode,
+    //     newpassword,
+    //   })
+    //   .then((result) => {
+    //     if (result.data.error) {
+    //       setError(result.data.error);
+    //       setErr(true);
+    //       setSuc(false)
+    //     } else {
+    //       setState(initialState);
+    //       setSuc(true);
+    //       setErr(false);
+    //       if (result.data.success) {
+    //         setSuccess(result.data.success);
+    //         setTimeout(() => {
+    //           navigate("/login");
+    //         }, 2000);
+    //       }
+    //     }
+    //   });
   };
 
   return (
@@ -80,6 +107,14 @@ const Resetpass = () => {
             <div className="eye" onClick={handleClick}>
               {show ? open : close}
             </div>
+          </div>
+
+          <div className={err ? "true" : "false"}>
+            <Alert severity="error">{error}</Alert>
+          </div>
+
+          <div className={suc ? "true" : "false"}>
+            <Alert severity="success">{success}</Alert>
           </div>
 
           <div>

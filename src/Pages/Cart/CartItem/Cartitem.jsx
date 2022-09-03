@@ -7,7 +7,7 @@ const Cartitem = ({ cartitem, dispatch, count }) => {
     <div className="cartitem">
       <div className="cartitem-container">
         <div className="cart-image">
-          <img src={cartitem.image} alt="" />
+          <img width={150} height={120} src={cartitem.image} alt="" />
         </div>
         <div className="name-price">
           <div className="name">{cartitem.name}</div>

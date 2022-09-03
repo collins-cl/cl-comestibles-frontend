@@ -32,29 +32,32 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const response = axios
-      .post("http://localhost:5000/api/users/register", {
-        firstname,
-        surname,
-        email,
-        password,
-      })
-      .then((result) => {
-        if (result.data.error) {
-          setShowSuccess(false);
-          setShowErr(true);
-          setErr(result.data.error);
-        } else {
-          setShowErr(false);
-          setShowSuccess(true);
-          setSuccess(result.data.success);
-          setState(initialValues);
-          setTimeout(() => {
-            navigate("/login");
-          }, 3000);
-          console.log(response);
-        }
-      });
+    setTimeout(() => {
+      navigate("/login");
+    }, 3000);
+    // const response = axios
+    //   .post("http://localhost:5000/api/users/register", {
+    //     firstname,
+    //     surname,
+    //     email,
+    //     password,
+    //   })
+    //   .then((result) => {
+    //     if (result.data.error) {
+    //       setShowSuccess(false);
+    //       setShowErr(true);
+    //       setErr(result.data.error);
+    //     } else {
+    //       setShowErr(false);
+    //       setShowSuccess(true);
+    //       setSuccess(result.data.success);
+    //       setState(initialValues);
+    //       setTimeout(() => {
+    //         navigate("/login");
+    //       }, 3000);
+    //       console.log(response);
+    //     }
+    //   });
   };
 
   return (

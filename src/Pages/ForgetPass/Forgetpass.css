@@ -101,11 +101,10 @@ button {
     text-align: center;
   }
 
-  
-.forgotpass-cont form button {
-  padding: 1.4em;
-  border: none;
-}
+  .forgotpass-cont form button {
+    padding: 1.4em;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 360px) {

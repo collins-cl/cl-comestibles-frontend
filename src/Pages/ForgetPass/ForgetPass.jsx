@@ -28,31 +28,34 @@ const ForgetPass = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios
-      .post("http://localhost:5000/api/users/forgetpassword", {
-        email,
-      })
-      .then((result) => {
-        if (result.data.error) {
-          setState(initialState);
-          setErr(true);
-          setSuc(false);
-          setMessage(result.data.error);
-          setShow(true);
-        } else {
-          setSuc(true);
-          setErr(false);
-          setSuccess(result.data.success);
-          setState(initialState);
-          if (result.data.success) {
-            setTimeout(() => {
-              setShow(false);
-            }, 4000);
-          } else {
-            setShow(true);
-          }
-        }
-      });
+    setTimeout(() => {
+      setShow(false);
+    }, 4000);
+    // await axios
+    //   .post("http://localhost:5000/api/users/forgetpassword", {
+    //     email,
+    //   })
+    //   .then((result) => {
+    //     if (result.data.error) {
+    //       setState(initialState);
+    //       setErr(true);
+    //       setSuc(false);
+    //       setMessage(result.data.error);
+    //       setShow(true);
+    //     } else {
+    //       setSuc(true);
+    //       setErr(false);
+    //       setSuccess(result.data.success);
+    //       setState(initialState);
+    //       if (result.data.success) {
+    //         setTimeout(() => {
+    //           setShow(false);
+    //         }, 4000);
+    //       } else {
+    //         setShow(true);
+    //       }
+    //     }
+    //   });
   };
 
   return (

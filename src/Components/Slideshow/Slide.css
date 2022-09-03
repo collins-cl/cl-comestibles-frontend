@@ -44,6 +44,39 @@
   border: 2px solid teal;
 }
 
+@media screen and (min-width: 601px) and (max-width: 959px) {
+  .slide {
+    background: url(../Assets/hero-image-1.jpg);
+    width: 100vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .slide-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    padding-top: 0;
+    max-width: 95vw;
+    margin: auto;
+    float: none;
+    text-align: center;
+  }
+
+  .slide-description {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-family: "WaterBrush";
+    margin-top: 10%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .slide {
     background: url(../Assets/hero-image-1.jpg);

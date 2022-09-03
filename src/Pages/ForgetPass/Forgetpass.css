@@ -68,6 +68,37 @@ button {
   font-weight: bold;
 }
 
+@media screen and (min-width: 601px) and (max-width: 959px) {
+  .forgotpass-cont {
+    max-width: 95vw;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .back-to-login a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .back-to-login a > div {
+    margin-left: 6px;
+  }
+
+  .forgotpass-cont form input,
+  .forgotpass-cont form button {
+    width: 70vw;
+    text-align: left;
+  }
+
+  .forgotpass-cont form button {
+    padding: 1.4em;
+    border: none;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .forgotpass-cont {
     max-width: 95vw;
@@ -96,14 +127,15 @@ button {
   }
 
   .forgotpass-cont form input,
-  button {
+  .forgotpass-cont form button {
     width: 90vw;
-    text-align: center;
+    text-align: left;
   }
 
   .forgotpass-cont form button {
     padding: 1.4em;
     border: none;
+    text-align: center;
   }
 }
 

@@ -22,34 +22,42 @@
   font-weight: bold;
 }
 
-.success-container .resend{
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.success-container .resend {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.got-email a{
+.got-email a {
   color: rgb(3, 63, 63);
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: underline;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
 }
 
-.success-container .resend > div{
-    margin-left: 5px;
+.success-container .resend > div {
+  margin-left: 5px;
 }
 
-.success-container .resend .a{
-    color: rgb(3, 63, 63);
-    font-weight: bold;
-    font-size: 16px;
+.success-container .resend .a {
+  color: rgb(3, 63, 63);
+  font-weight: bold;
+  font-size: 16px;
 }
 
-@media screen and (max-width : 600px) {
-    .success-container{
-        max-width: 90vw;
-        margin: auto;
-        margin-top: 4em;
-    }
+@media screen and (min-width: 601px) and (max-width: 959px) {
+  .success-container {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .success-container {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 4em;
+  }
 }

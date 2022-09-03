@@ -79,6 +79,60 @@ button {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 601px) and (max-width: 959px) {
+  .signup-container {
+    max-width: 95vw;
+    margin: auto;
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signup-section {
+    max-width: 95vw;
+    margin: auto;
+    gap: 0;
+  }
+
+  .signup-section > div {
+    margin-top: 2em;
+  }
+
+  .signup-head {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .signup-form form {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .signup-form form > div {
+    margin-top: 1.5em;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  .signup-form form input,
+  .signup-form form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+  }
+
+  .signup-info {
+    text-align: center;
+    max-width: 90vw;
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .signup-container {
     max-width: 95vw;
@@ -126,7 +180,7 @@ button {
     margin-top: 6px;
   }
 
-  button{
+  button {
     padding: 17px;
   }
 

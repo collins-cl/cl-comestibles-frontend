@@ -32,7 +32,13 @@
   font-family: "WaterBrush";
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 601px) and (max-width: 959px){
+  .twitter-container{
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .twitter-container {
     display: flex;
     justify-content: center;

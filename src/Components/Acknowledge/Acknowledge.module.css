@@ -35,6 +35,44 @@
   height: 300px;
 }
 
+@media screen and (min-width: 601px) and (max-width: 959px) {
+  .ark {
+    background-color: aquamarine;
+    position: relative;
+    max-width: 95vw;
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 7em;
+  }
+
+  .arkcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+    padding: 2em;
+  }
+
+  .container1 {
+    width: 600px;
+  }
+
+  .container1 .head {
+    font-size: 3em;
+  }
+
+  .container1 .details {
+    margin-top: 0.6em;
+    font-size: 17px;
+    color: teal;
+  }
+
+  .container2 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .ark {
     background-color: aquamarine;

@@ -26,6 +26,31 @@
   transition: all 1s ease;
 }
 
+@media screen and (min-width: 601px) and (max-width: 959px) {
+  .picks {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 7em;
+    margin-bottom: 5em;
+  }
+
+  .pickscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .pickscontainer > div{
+    margin: 1em;
+  }
+
+  .picks1 img {
+    width: 30vw;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .picks {
     max-width: 90vw;
@@ -55,7 +80,7 @@
     font-weight: bold;
   }
 
-  .picks1 img{
+  .picks1 img {
     width: 40vw;
   }
 
